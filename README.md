@@ -12,7 +12,7 @@ Bu repo, Global AI Hub Deep Learning Bootcamp kapsamında gerçekleştirilen pro
 - Convolutional Neural Networks (CNN)
 - Hiperparametre Optimizasyonu: Keras Tuner ile filtre sayısı, katman sayısı, öğrenme oranı, dropout oranı gibi parametreler optimize edilmiştir.
 - Aktivasyon Fonksiyonu: ReLU (ara katmanlar), Softmax (çıktı katmanı)
-- Optimizasyon Algoritmaları: Adam
+- Optimizasyon Algoritmaları: Adam,RMSProp
 - Loss Fonksiyonu: Categorical Crossentropy
 
 ## Metrikler ve Değerlendirme
@@ -25,17 +25,18 @@ Eğitim ve değerlendirme sürecinde aşağıdaki metrikler kullanılmıştır:
 
 ##  Ek Çalışmalar
 
-- Random Search hiperparametre optimizasyonu ile model performansı artırıldı.
+- Random Search hiperparametre optimizasyonu denendi.
 - Kaggle GPU ortamında eğitim yapıldı.
 
 ## Sonuç
 
 - Bu çalışmada, hayvan görselleri üzerinde bir sınıflandırma modeli geliştirildi.
-- Modeli birkaç kez eğitildi; herhangi bir parametre değiştirilmemesine rağmen accuracy, f1-score gibi metrikler son kaggle notebookta önceki değerlere göre daha düşüktür.Notebook'un önceki versiyonlarından kontrol edilebilir. Burası tekrar optimize edilemedi çünkü hiperparametre optimizasyonun uzun sürüyor olması limit problemi yaratacaktı. Elde edilen maksimum performans metrikleri:
-  
-<img width="1115" height="472" alt="image" src="https://github.com/user-attachments/assets/a20cabac-6d6f-4fb9-b5f0-a13d7bef2db2" />
+- GradCAM kısmı için: Notebook hücreleri çalıştırılıp test klasöründen seçilen bir görsel uzantısı kullanılırsa heatmap sonucu görülebilir. Bu sorun çözülemedi, kaggle'da output klasöründe split işlemi sonucunda oluşan test klasöründen görsel seçilmelidir.
+- Elde edilen maksimum performansı gösteren model ve performans metrikleri:
+- 
+  <img width="961" height="422" alt="image" src="https://github.com/user-attachments/assets/bc525a42-a3ad-429b-aff3-118a1294f370" />
 
-<img width="746" height="622" alt="image" src="https://github.com/user-attachments/assets/58292fac-0411-4c3d-859c-38b89065b16f" />
+  <img width="662" height="552" alt="image" src="https://github.com/user-attachments/assets/835d4010-37de-490c-96d1-276d2686c4d1" />
 
 
 
@@ -46,4 +47,4 @@ Eğitim ve değerlendirme sürecinde aşağıdaki metrikler kullanılmıştır:
 - Veri setinin büyütülmesi ve augmentasyon teknikleri ile çeşitlendirilmesi
 
 # Kaggle Linki
-- https://www.kaggle.com/code/mehtapkorkmaz/animals-with-cnn
+- [https://www.kaggle.com/code/mehtapkorkmaz/animals-with-cnn](https://www.kaggle.com/code/mehtapkorkmaz/animals-with-cnn)
